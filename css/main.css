@@ -71,6 +71,38 @@ p {
     margin: 0 auto;
 }
 
+/* Start of Header */
+.header
+{
+    margin: 4% 0;
+}
+
+.top
+{
+    display: flex;
+    margin-bottom: 4.5%;
+}
+
+.top-navigation
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.top-navigation a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.top img
+{
+    margin-right: 6%;
+}
+/* End of Header */
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
