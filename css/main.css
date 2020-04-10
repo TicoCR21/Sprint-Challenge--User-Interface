@@ -93,24 +93,44 @@ p {
 
 .top-buttons
 {
-        display: none;
+    display: none;
 }
 
 .top-navigation a
 {
     text-decoration: none;
     color: black;
+    transition: transform 1.5s;
 }
 
 .top-navigation a:hover
 {
     color: teal;
+    transform: scale( 1.4 );
 }
 
 .top img
 {
     margin-right: 6%;
+    transition: transform 2s;
 }
+
+.top img:hover
+{
+    transform: skewY( 10deg );
+}
+
+header img
+{
+    transition: transform 1s;
+    transform-origin: top right;
+}
+
+header img:hover
+{
+    transform: rotate( -2deg );
+}
+
 /* End of Header */
 
 .top-content {
@@ -152,6 +172,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 1s;
+    transform-origin: top left;
 }
 
 /* Start of Boxes Colors */
@@ -207,6 +229,11 @@ p {
 
 
 /* End of Boxes Colors */
+
+.middle-content .boxes .box:hover
+{
+    transform: rotate( 45deg ) scale(0.5);   
+}
 
 .bottom-content {
     display: flex;
@@ -392,12 +419,14 @@ footer nav a {
     .top-buttons button:active
     {
         color: black;
-        background-color: rgba(128, 128, 128, 0.438);
+        outline: 0;
+        background-color: rgba(128, 128, 128, 0.719);
     }
 
     .top-buttons button:focus
     {
         outline: 0;
     }
+    
 }
 
