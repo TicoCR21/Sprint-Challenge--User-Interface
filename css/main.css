@@ -91,10 +91,20 @@ p {
     align-items: flex-end;
 }
 
+.top-buttons
+{
+        display: none;
+}
+
 .top-navigation a
 {
     text-decoration: none;
     color: black;
+}
+
+.top-navigation a:hover
+{
+    color: teal;
 }
 
 .top img
@@ -229,5 +239,165 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Start of Media Queries */
+@media( max-width: 800px)
+{
+    .container
+    {
+        width: 100%;
+    }
+
+    .top nav
+    {
+        font-size: 0.9rem;
+    }
+
+    header img
+    {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box
+    {
+        
+        min-width: 100px;
+        min-height: 100px;
+    }
+}
+
+@media( max-width: 500px)
+{
+    .top
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top img
+    {
+        width: 35%;
+        height: 35%;
+        margin-bottom: 6%;
+    }
+
+    .top-navigation
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: yellow;
+    }
+
+    .top-navigation a
+    {
+        background-color: blue;
+        width: 50%;
+        text-align: center;
+        border: 3px solid black;
+
+        border-radius: 4%; 
+    }
+
+    header img
+    {
+        height: 180px;
+    }
+
+    .top-content
+    {
+        flex-direction: column;
+    }
+
+    .top-content .text-container 
+    {
+        width: 100%;  
+    }
+
+    .middle-content
+    {
+        padding: 20px 0;
+    }
+
+    .middle-content h2 
+    {
+        text-align:  center;
+    }
+
+    .middle-content .boxes .box
+    {
+        
+        min-width: 170px;
+        min-height: 170px;
+        margin: 2.5%;
+    }
+
+    .boxes
+    {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .middle-content .boxes .box5, .middle-content .boxes .box6, 
+    .middle-content .boxes .box7, .middle-content .boxes .box8,
+    .middle-content .boxes .box9, .middle-content .boxes .box10
+    {
+        display: none;
+    }
+
+    .top-content .text-container h2
+    {
+        font-size: 1.5rem;
+    }
+
+    .middle-content h2
+    {
+        font-size: 1.5rem;
+    }
+
+    .bottom-content
+    {
+        display: none;
+    }
+
+    footer
+    {
+        display: none;
+    }
+
+    .top-navigation
+    {
+         display: none;
+    }
+
+    .top-buttons
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-buttons button
+    {
+        width: 50%;
+        color: rgba(31, 30, 30, 0.366);
+        padding: 4px;
+        border-radius: 6%;
+    }
+
+    .top-buttons button:active
+    {
+        color: black;
+        background-color: rgba(128, 128, 128, 0.438);
+    }
+
+    .top-buttons button:focus
+    {
+        outline: 0;
+    }
 }
 
