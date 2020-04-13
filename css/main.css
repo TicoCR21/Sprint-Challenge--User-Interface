@@ -1,0 +1,432 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Start of Header */
+.header
+{
+    margin: 4% 0;
+}
+
+.top
+{
+    display: flex;
+    margin-bottom: 4.5%;
+}
+
+.top-navigation
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.top-buttons
+{
+    display: none;
+}
+
+.top-navigation a
+{
+    text-decoration: none;
+    color: black;
+    transition: transform 1.5s;
+}
+
+.top-navigation a:hover
+{
+    color: teal;
+    transform: scale( 1.4 );
+}
+
+.top img
+{
+    margin-right: 6%;
+    transition: transform 2s;
+}
+
+.top img:hover
+{
+    transform: skewY( 10deg );
+}
+
+header img
+{
+    transition: transform 1s;
+    transform-origin: top right;
+}
+
+header img:hover
+{
+    transform: rotate( -2deg );
+}
+
+/* End of Header */
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+    transform-origin: top left;
+}
+
+/* Start of Boxes Colors */
+.middle-content .boxes .box1 
+{
+    background: teal;
+}
+
+.middle-content .boxes .box2 
+{
+    background: gold;
+}
+
+.middle-content .boxes .box3 
+{
+    background: cadetblue;
+}
+
+.middle-content .boxes .box4 
+{
+    background: coral;
+}
+
+.middle-content .boxes .box5 
+{
+    background: crimson;
+}
+
+.middle-content .boxes .box6 
+{
+    background: forestgreen;
+}
+
+.middle-content .boxes .box7 
+{
+    background: darkorchid;
+}
+
+.middle-content .boxes .box8 
+{
+    background: hotpink;
+}
+
+.middle-content .boxes .box9 
+{
+    background: indigo;
+}
+
+.middle-content .boxes .box10 
+{
+    background: dodgerblue;
+}
+
+
+/* End of Boxes Colors */
+
+.middle-content .boxes .box:hover
+{
+    transform: rotate( 45deg ) scale(0.5);   
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Start of Media Queries */
+@media( max-width: 800px)
+{
+    .container
+    {
+        width: 100%;
+    }
+
+    .top nav
+    {
+        font-size: 0.9rem;
+    }
+
+    header img
+    {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box
+    {
+        
+        min-width: 100px;
+        min-height: 100px;
+    }
+}
+
+@media( max-width: 500px)
+{
+    .top
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top img
+    {
+        width: 35%;
+        height: 35%;
+        margin-bottom: 6%;
+    }
+
+    .top-navigation
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: yellow;
+    }
+
+    .top-navigation a
+    {
+        background-color: blue;
+        width: 50%;
+        text-align: center;
+        border: 3px solid black;
+
+        border-radius: 4%; 
+    }
+
+    header img
+    {
+        height: 180px;
+    }
+
+    .top-content
+    {
+        flex-direction: column;
+    }
+
+    .top-content .text-container 
+    {
+        width: 100%;  
+    }
+
+    .middle-content
+    {
+        padding: 20px 0;
+    }
+
+    .middle-content h2 
+    {
+        text-align:  center;
+    }
+
+    .middle-content .boxes .box
+    {
+        
+        min-width: 170px;
+        min-height: 170px;
+        margin: 2.5%;
+    }
+
+    .boxes
+    {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .middle-content .boxes .box5, .middle-content .boxes .box6, 
+    .middle-content .boxes .box7, .middle-content .boxes .box8,
+    .middle-content .boxes .box9, .middle-content .boxes .box10
+    {
+        display: none;
+    }
+
+    .top-content .text-container h2
+    {
+        font-size: 1.5rem;
+    }
+
+    .middle-content h2
+    {
+        font-size: 1.5rem;
+    }
+
+    .bottom-content
+    {
+        display: none;
+    }
+
+    footer
+    {
+        display: none;
+    }
+
+    .top-navigation
+    {
+         display: none;
+    }
+
+    .top-buttons
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-buttons button
+    {
+        width: 50%;
+        color: rgba(31, 30, 30, 0.366);
+        padding: 4px;
+        border-radius: 6%;
+    }
+
+    .top-buttons button:active
+    {
+        color: black;
+        outline: 0;
+        background-color: rgba(128, 128, 128, 0.719);
+    }
+
+    .top-buttons button:focus
+    {
+        outline: 0;
+    }
+    
+}
+
